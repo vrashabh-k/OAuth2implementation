@@ -1,4 +1,4 @@
-<!-- # OAuth2 Web App with Google Authentication
+# OAuth2 Web App with Google Authentication
 
 ## 🚀 Project Overview
 This is an **OAuth2-based authentication system** using **Google OAuth** in a **Node.js + Express.js** web app. Users can log in via Google, view a protected route, and log out securely.
@@ -51,27 +51,7 @@ The app runs at **`http://localhost:5000`**
 
 ---
 
-## 📂 Project Structure
-```
-/oauth2-app
-│── /views          # EJS templates (UI)
-│── /public         # CSS and static assets
-│── index.js        # Main server file
-│── auth.js         # Passport authentication setup
-│── .env            # Environment variables
-│── package.json    # Dependencies & scripts
-```
 
----
-
-## 🔧 API Endpoints
-| Method | Route            | Description                   |
-|--------|----------------|-------------------------------|
-| GET    | `/`            | Home page with login button  |
-| GET    | `/auth/google` | Initiates Google OAuth flow  |
-| GET    | `/google/callback` | Handles Google OAuth callback |
-| GET    | `/protected`   | Protected route (requires login) |
-| GET    | `/logout`      | Logs out user & destroys session |
 
 ---
 
@@ -91,12 +71,9 @@ The app runs at **`http://localhost:5000`**
 
 ---
 
-## 📜 License
-This project is **open-source** under the [MIT License](LICENSE).
 
----
 
 ## 🎯 Contributing
 Feel free to submit **issues & pull requests** to improve the project!
 
-📩 **Need help?** Contact me at [vvkam04@gmail.com](vvkam04@gmail.com) 🚀 -->
+📩 **Need help?** Contact me at [vvkam04@gmail.com](vvkam04@gmail.com) 🚀

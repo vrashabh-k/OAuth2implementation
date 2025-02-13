@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OAuth2 Web App</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="/">OAuth2 App</a>
+            <div class="navbar-nav ms-auto">
+                <% if (user) { %>
+                    <span class="navbar-text me-3">Hello, <%= user.displayName %></span>
+                    <a class="btn btn-danger" href="/logout">Logout</a>
+                <% } else { %>
+                    <a class="btn btn-light" href="/auth/google">Login with Google</a>
+                <% } %>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <%- body %>  <!-- ✅ This ensures `index.ejs` content is inserted here -->
+    </div>
+</body>
+</html>
